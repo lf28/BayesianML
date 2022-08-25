@@ -14,11 +14,6 @@ begin
 	using Logging; Logging.disable_logging(Logging.Info);
 end;
 
-# ╔═╡ af174ba8-fd36-11ec-10a6-a3506bbed95f
-md"""
-##### Package initialization
-"""
-
 # ╔═╡ b2ad130c-5d40-4a4b-adbe-5880984a9460
 TableOfContents()
 
@@ -1834,8 +1829,7 @@ version = "0.9.1+5"
 """
 
 # ╔═╡ Cell order:
-# ╟─af174ba8-fd36-11ec-10a6-a3506bbed95f
-# ╠═078e8979-6753-411f-9c34-ba0164ea9cb2
+# ╟─078e8979-6753-411f-9c34-ba0164ea9cb2
 # ╟─b2ad130c-5d40-4a4b-adbe-5880984a9460
 # ╟─97d325ca-2c41-42b4-82b8-f74659e61dc3
 # ╟─300929c0-3279-47ef-b165-0e936b757679
