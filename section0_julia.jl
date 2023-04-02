@@ -54,7 +54,7 @@ md"""
 
 Install Julia (1.8 over greater)
 * Download and install Julia by following the instructions at [https://julialang.org/downloads/](https://julialang.org/downloads/).
-* Choose either the latest stable version (v1.8 recommend) or long-term support version v1.6
+* Choose the latest stable version (the current one is v1.8.5) 
 
 
 """

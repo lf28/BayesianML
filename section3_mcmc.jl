@@ -869,7 +869,7 @@ md"""
 md"""
 To understand the idea, let's consider a more complicated target distribution which is formed by super-imposing three bivariate Gaussians together. The three Gaussians are with means ``[-4,0], [4,0],`` and ``[0,0]``, and the variances ``\begin{bmatrix} 2 & 1.5 \\ 1.5& 2\end{bmatrix}``, ``\begin{bmatrix} 2 & -1.5 \\ -1.5 & 2\end{bmatrix}`` and ``\begin{bmatrix} 2 & 0 \\ 0 & 2\end{bmatrix}`` respectively. 
 
-The contour and surface of the targe distribution is plotted below for reference. 
+The contour and surface of the target distribution are plotted below for reference. 
 """
 
 # ╔═╡ 2fc46172-cd45-48b2-bff2-9dd5a91e21d1
@@ -932,7 +932,7 @@ Therefore, the total length of the pluck's movement is proportional to ``\epsilo
 
 The animation below demonstrates the idea, where 10 independent HMC proposals are simulated from an initial starting location at ``[0, 2.5]`` by the *Leapfrog* algorithm:
 * 10 different random forces of different directions and strengths were applied to the pluck
-* the plank follows the law of physics to explore the landscape (note how the plucks moves around the curvature of the valley)
+* the plank follows the law of physics to explore the landscape (note how the plucks move around the curvature of the valley)
 
 """
 
@@ -990,7 +990,7 @@ md"""
 
 **`ess` and efficiency**
 
-Efficiency metrics can also computed and compared between the two algorithms. For 2000 iterations (after the first 2000 discarded as burn-in), HMC produces around 1183 independent samples while there are only less than 17 effective sample contained in the original MH sample. HMC is therefore 60 fold more efficient than the ordinaly MH algorithm.
+Efficiency metrics can also be computed and compared between the two algorithms. For 2000 iterations (after the first 2000 discarded as burn-in), HMC produces around 1183 independent samples while there are only less than 17 effective samples contained in the original MH sample. HMC is therefore 60 fold more efficient than the ordinary MH algorithm.
 """
 
 # ╔═╡ 2f2c94fd-a2f2-45f8-a284-78d73721f623
@@ -3383,7 +3383,7 @@ version = "0.9.1+5"
 # ╟─f0f07e50-45ee-4907-8ca8-50d5aaeeafb4
 # ╟─44c167b9-375d-4051-a4c1-825e5ec9570c
 # ╟─5de392a4-63d7-4313-9cbd-8eaeb4b08eea
-# ╟─cf968e52-7518-40b0-af57-1f552c41dc07
+# ╠═cf968e52-7518-40b0-af57-1f552c41dc07
 # ╟─5b3f3b8a-1cfa-4b32-9a20-1e1232549e78
 # ╟─d8fad6e3-9adf-4ae9-9260-885f21d07fa9
 # ╟─c3169cf8-6b7c-418f-8052-4fd242a07592
@@ -3399,7 +3399,7 @@ version = "0.9.1+5"
 # ╟─99decdfe-6bd8-40af-a42d-f1639c98b323
 # ╟─99153a03-8954-48c6-8396-1c2b669e4ea6
 # ╟─0802dc90-8312-4509-82f0-6eca735e852b
-# ╠═5a6c25f0-e7d2-469d-bc19-54617e417b6e
+# ╟─5a6c25f0-e7d2-469d-bc19-54617e417b6e
 # ╟─a00b9476-af30-4609-8b1e-4693246fdaef
 # ╟─5d704270-3a0f-4241-b622-ab8135d6b545
 # ╟─dd15f969-733e-491c-a1b7-e0fbf4532e64
@@ -3486,16 +3486,16 @@ version = "0.9.1+5"
 # ╟─6a9863cb-3067-4250-ad89-6a1c8dc1fddc
 # ╟─ca2662a9-2754-45c1-9ce8-5b8599eef240
 # ╟─9375f800-7c4b-4cae-b263-f17198b04011
-# ╠═280069b8-f9fe-4cd6-866d-a20b9eab036e
+# ╟─280069b8-f9fe-4cd6-866d-a20b9eab036e
 # ╟─0138dedf-f874-4bbd-bf87-7f6bbe8ca816
-# ╠═af617b31-396f-465e-b27e-2fa14b3b2423
+# ╟─af617b31-396f-465e-b27e-2fa14b3b2423
 # ╟─18ebc039-1656-4f74-8e9f-f03a8d39d7c4
-# ╠═88696ab1-2866-46f1-978e-bd032566cef7
+# ╟─88696ab1-2866-46f1-978e-bd032566cef7
 # ╟─fd0d20a0-5732-4afd-b2d7-b013eb624834
-# ╠═74deaa30-4c5c-4e40-99bf-912bd8611374
+# ╟─74deaa30-4c5c-4e40-99bf-912bd8611374
 # ╟─60afbdbf-6e83-44e2-99ed-2d64e339b0d9
-# ╠═55cd420e-461c-4a1b-a82c-a2e04be87d74
-# ╠═42cfa97c-6298-47f1-a17a-8a5ff642e570
+# ╟─55cd420e-461c-4a1b-a82c-a2e04be87d74
+# ╟─42cfa97c-6298-47f1-a17a-8a5ff642e570
 # ╟─84c51030-d87a-4269-89b3-3b43aac03c61
 # ╟─8f1eadcb-71f2-4265-9ee1-7a8f5f252bc7
 # ╟─9cf68cd6-1175-4660-8918-58bb50b4ecf3
@@ -3504,6 +3504,6 @@ version = "0.9.1+5"
 # ╟─8cf9b88b-e17c-445a-9ebe-449d45c9c3cc
 # ╟─27c4c76b-65d8-40cb-89f3-fc42c4a6848e
 # ╟─8fd498e7-0690-4947-867a-9e6495a8bcd9
-# ╠═f0997ca0-5cfd-4bbe-b094-5fe5a7ea8b65
+# ╟─f0997ca0-5cfd-4bbe-b094-5fe5a7ea8b65
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
