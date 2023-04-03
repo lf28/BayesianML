@@ -37,7 +37,7 @@ md"""
 ## Frequentist's linear regression
 
 
-Firstly, we recap the Frequentist's regression model. A typycal regression model assumes each observation ``y_n`` is generated based on the some deterministic transformation of the independent variable ``\mathbf{x}_n \in R^D`` plus and some observation noise ``\varepsilon_n``:
+Firstly, we recap the Frequentist's regression model. A typical regression model assumes each observation ``y_n`` is generated based on some deterministic transformation of the independent variable ``\mathbf{x}_n \in R^D`` plus and some observation noise ``\varepsilon_n``:
 
 ```math
 y_n =  \mu(\mathbf{x}_n) + \varepsilon_n
@@ -360,7 +360,7 @@ An animation is created below to demonstrate the posterior update equation. The 
 p\left(\begin{bmatrix}\beta_0\\ \beta_1\end{bmatrix}\right) = \mathcal{N}\left (\begin{bmatrix}0\\ 0\end{bmatrix}, \begin{bmatrix}10^2& 0 \\ 0 & 10^2\end{bmatrix}\right).
 ```
 
-The posterior distribution is then updated sequentially with the first 10 observations. As can be observed, initially the prior distribution is circular and covers a wide range of possible values. With more data observed, the posterior quickly converges to the posterior centre: ``[3,3]^\top``. Also, note the shrinking posterior variance (or increasing estimation precision) as more data being observed.
+The posterior distribution is then updated sequentially with the first 10 observations. As can be observed, initially the prior distribution is circular and covers a wide range of possible values. With more data observed, the posterior quickly converges to the posterior centre: ``[3,3]^\top``. Also, note the shrinking posterior variance (or increasing estimation precision) as more data is observed.
 """
 
 # ╔═╡ 71bb2994-7fd2-4e11-b2f1-d88b407f86c1
@@ -885,7 +885,7 @@ Based on the Monte Carlo principle, their posterior distributions can be empiric
 Take ``\sigma`` for example, its posterior can be approximated based on ``\{\gamma_0^{(r)}, \gamma_1^{(r)}\}_{r=1}^R`` by an empirical distribution:
 
 ```math
-p(\sigma |\texttt{TV}, \mathcal{D}) \approx \frac{1}{R} \sum_{r=1}^R \delta_{\sigma^{(r)}},
+p(\sigma |\texttt{TV}, \mathcal{D}) \approx \frac{1}{R} \sum_{r=1}^R \delta_{\sigma^{(r)}_{\texttt{TV}}},
 ```
 where 
 
@@ -932,7 +932,7 @@ md"""
 It is not practical to implement the approximation for every single internal variable manually. Fortunately, `Turing` provides us with an easy-to-use method:
 ```
 generated_quantities(model, chain)
-``` to obtain internal variables' samples. The method takes a `Turing` model and a chain object as input arguments and it returns all internal variables' samples, which are returned at the end of the `Turing` model. For example, to obtain the posterior samples of the hidden variables ``\mu`` and ``\sigma``, simply issue commands:
+```  The method takes a `Turing` model and a chain object as input arguments and it returns all internal variables' samples, which are returned at the end of the `Turing` model. For example, to obtain the posterior samples of the hidden variables ``\mu`` and ``\sigma``, simply issue commands:
 """
 
 # ╔═╡ a43189a3-a94f-4e69-85b1-3a586b2cc0eb

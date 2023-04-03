@@ -18,7 +18,7 @@ begin
 	using Random
 	using LaTeXStrings
 	using Logging; 
-	# Logging.disable_logging(Logging.War);
+	Logging.disable_logging(Logging.Warn);
 end;
 
 # ╔═╡ ff6fcfa7-dcd1-4529-ac83-46f9f1e17bc7
@@ -2656,13 +2656,13 @@ version = "1.4.1+0"
 # ╟─df342965-f2eb-456f-b4d4-1fc76615e52a
 # ╟─d6c1074b-530b-453a-a1e4-cb41b09f4fdf
 # ╟─47d9675b-4427-45af-a02a-950961692d5d
-# ╠═2aebebfd-7009-4def-8362-1617d18b5c64
+# ╟─2aebebfd-7009-4def-8362-1617d18b5c64
 # ╟─0edef66b-e323-475b-bd83-972afe153c23
 # ╟─e9dfde47-306d-4f04-b468-2178c00cce74
 # ╟─61398b43-d307-4e03-9097-1aae3414a8e7
-# ╠═e21db2b0-2c2f-4bfd-9e5a-05b06db4d0fe
+# ╟─e21db2b0-2c2f-4bfd-9e5a-05b06db4d0fe
 # ╟─2a0c544f-0442-41d7-84b7-b716b2a909ec
-# ╠═bf7857fd-1b69-4f54-86b7-4f6082081693
+# ╟─bf7857fd-1b69-4f54-86b7-4f6082081693
 # ╟─2097b04a-c6a2-433a-8393-a5c4794db6c1
 # ╟─53c7c995-c9c3-409c-9a77-1bea31bd9fa9
 # ╟─cd3c7fa8-dc4c-4101-b9d5-47e92c8df6f3
