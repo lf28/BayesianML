@@ -55,16 +55,14 @@ md"""
 ## In this lecture
 
 * Prior distribution choices
-  * conjugate priors
   * some common distributions for priors
 
 
-* Predictive distributions and their checks 
-  * prior predictive check
-  * posterior predictive check
 
 
-  
+* Conjugate inference 
+
+
 
 
 
@@ -719,6 +717,16 @@ end
 md"""
 
 # Bayesian predictive checks
+
+## This time
+
+* Predictive distributions and their checks 
+  * prior predictive check
+  * posterior predictive check
+
+
+  
+
 """
 
 # ╔═╡ 6b460036-890d-4364-aac2-2c61dc44ed75
