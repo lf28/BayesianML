@@ -172,7 +172,7 @@ A Turing model can be specified with arbitrary Julia code. For example,
 
 * `=` assignment: can be used to assign a deterministic value to a variable; e.g.
   > ```μ = 0; data ~ Normal(μ, 1)```
-  * a Gaussian distribution with a fixed mean of 1
+  * a Gaussian distribution with a fixed mean of zero
   * note `=` is different from `~` operator; `~` is used to specify a distribution assumption for a random variable; `=` is a deterministic non-random assignment 
 
 """
@@ -615,8 +615,8 @@ To summarise the simulated data, we sum each ``\mathcal D^{(r)}_{pred}`` to find
 
 # ╔═╡ 846d2693-b644-4cd7-af2a-5ce6b843cb7d
 let
-	histogram(sum(Array(post_pred_chain), dims=2)[:], normed=true, xticks = 0:10, label="Posterior predictive on Nₕ", legend=:outerbottom, xlabel="number of heads "*L"N_h", title="Posterior predictive check with "*L"a_0=b_0=1")
-	vline!([7], lw=4, lc=2, label="Observed Nₕ")
+	histogram(sum(Array(post_pred_chain), dims=2)[:], normed=true, xticks = 0:10, label="Posterior predictive on "*L"N_h", legend=:outerbottom, xlabel="number of heads "*L"N_h", title="Posterior predictive check with "*L"a_0=b_0=1")
+	vline!([7], lw=4, lc=2, label="Observed "*L"N_h")
 end
 
 # ╔═╡ 11989831-8179-4978-adfa-480f9a962f5f
