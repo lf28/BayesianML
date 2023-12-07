@@ -207,12 +207,12 @@ scientists_data_700
 
 # ╔═╡ 54107ea4-337c-4698-a4c9-237dbfc49514
 let
-	ylocations = range(0, 2, length=length(scientists_data_700)) .+ 0.5
-	plt = plot(ylim = [0., 3.0], xminorticks =5, yticks=false, showaxis=:x, size=(600,200))
+	ylocations = range(0, 0.25, length=length(scientists_data_700)) .+ 0.0
+	plt = plot(ylim = [0., 0.3], xminorticks =5, yticks=false, showaxis=:x, size=(600,200))
 	# scientists = 'A':'G'
-	δ = 0.1
+	# δ = 0.1
 	for i in 1:length(scientists_data_700)
-		plot!([scientists_data_700[i]], [ylocations[i]], label="", markershape =:circle, markersize=1, markerstrokewidth=1, st=:sticks, c=1, alpha=0.5)
+		plot!([scientists_data_700[i]], [ylocations[i]], label="", markershape =:circle, markersize=2, markerstrokewidth=1, st=:sticks, c=1, alpha=0.5)
 		# annotate!([scientists_data_700[i]].+7*(-1)^i * δ, [ylocations[i]].+ δ, scientists[i], 8)
 	end
 	# vline!([μ̄], lw=2, ls=:dash, label="sample mean", legend=:topleft)
@@ -2932,12 +2932,12 @@ version = "1.4.1+1"
 # ╟─bf128db7-eaff-4d19-8d6b-32dea8f3bf8b
 # ╟─bdb0989d-3b83-419c-a4f5-6f0cbb4a513d
 # ╠═58d52c04-9fbf-40fa-843f-e05e90e9d914
-# ╠═62daf110-bf01-4e8a-b212-6fad7b92c0c9
+# ╟─62daf110-bf01-4e8a-b212-6fad7b92c0c9
 # ╟─cf8f2889-8010-4fba-8607-81c6c5a38395
 # ╟─88c3e51e-3671-4181-b274-85805d453db1
 # ╠═9b5ceaea-5a98-458b-b1ed-d56326b967fe
 # ╟─54107ea4-337c-4698-a4c9-237dbfc49514
-# ╟─68707d3d-02c4-4cda-b040-98b1f0818055
+# ╠═68707d3d-02c4-4cda-b040-98b1f0818055
 # ╟─3931624c-5dcc-4ff3-89f6-07ea85adae08
 # ╟─62091dc2-553f-4e73-bedd-6589b824309a
 # ╠═d59c81a1-9479-44c4-80b0-b1249ede43d4
